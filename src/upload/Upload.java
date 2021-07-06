@@ -72,7 +72,7 @@ public class Upload {
                     for (File file : fs) {
                         set.add(file.getName());
                     }
-                    /** 判断是否已有该文件* */
+//                    /** 判断是否已有该文件* */
                     if (set.contains(f.getName())) {
                         JOptionPane.showMessageDialog(new JDialog(),
                                 f.getName() + ":该文件已存在！");
