@@ -80,55 +80,25 @@ public class BaseResponse implements Serializable {
     public BaseResponse(Object data) {
         this.data = data;
         this.status = BaseResponse.STATUS_SUCCESS;
-        base = new ResponseEntity<>(this, HttpStatus.OK);
+
     }
 
     public BaseResponse(Object data, String ver) {
         this.data = data;
         this.ver = ver;
         this.status = BaseResponse.STATUS_SUCCESS;
-        base = new ResponseEntity<>(this, HttpStatus.OK);
+        
     }
 
     public BaseResponse(int status, String msg) {
         this.status = status;
         this.msg = msg;
         // System.out.println(this);
-        base = new ResponseEntity<>(this, HttpStatus.OK);
+        
         // System.out.println(base);
     }
 
-    public ResponseEntity<BaseResponse> build() {
-        return base;
-    }
 
-    public static ResponseEntity<BaseResponse> success(Object data) {
-        return new BaseResponse(data).build();
-    }
-
-    public static ResponseEntity<BaseResponse> systemError(String msg) {
-        return new BaseResponse(BaseResponse.STATUS_SYSTEM, msg).build();
-    }
-
-    public static ResponseEntity<BaseResponse> error(String msg) {
-        return new BaseResponse(BaseResponse.STATUS_ERROR, msg).build();
-    }
-
-    public static ResponseEntity<BaseResponse> badrequest(String msg) {
-        return new BaseResponse(BaseResponse.STATUS_BADREQUEST, msg).build();
-    }
-
-    public static ResponseEntity<BaseResponse> forbidden(String msg) {
-        return new BaseResponse(BaseResponse.STATUS_FORBIDDEN, msg).build();
-    }
-
-    public static ResponseEntity<BaseResponse> unauth(String msg) {
-        return new BaseResponse(BaseResponse.STATUS_UNAUTH, msg).build();
-    }
-
-    public static ResponseEntity<BaseResponse> business(String msg) {
-        return new BaseResponse(BaseResponse.BUSINESS_SYSTEM, msg).build();
-    }
 
     public String getVer() {
         return ver;
