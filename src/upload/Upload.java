@@ -27,7 +27,8 @@ public class Upload {
         jPanel.add("North", jl);// 将标签添加到容器中
         jPanel.add("North", jToolBar);
         JButton developer = new JButton("上传文件");
-        developer.setHorizontalAlignment(SwingConstants.CENTER);
+//        developer.setHorizontalAlignment(SwingConstants.CENTER);
+        developer.setHorizontalAlignment(SwingConstants.LEFT);
         jToolBar.add(developer);// 上传文件按钮添加到容器
         jPanel.add("North", jToolBar);
         developer.addMouseListener(new MouseAdapter() { // 添加鼠标点击事件
@@ -98,6 +99,8 @@ public class Upload {
             } catch (FileNotFoundException e1) {
                 JOptionPane.showMessageDialog(null, "上传失败！", "提示",
                         JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "上传失败！", "提示",
+                        JOptionPane.INFORMATION_MESSAGE);
                 e1.printStackTrace();
             } catch (IOException e1) {
                 JOptionPane.showMessageDialog(null, "上传失败！", "提示",
