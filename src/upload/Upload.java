@@ -75,7 +75,7 @@ public class Upload {
 //                    /** 判断是否已有该文件* */
                     if (set.contains(f.getName())) {
                         JOptionPane.showMessageDialog(new JDialog(),
-                                f.getName() + ":该文件已存在！");
+                                f.getName() + ":该文件已存在123！");
                         return;
                     }
                     input = new FileInputStream(f);
@@ -89,8 +89,11 @@ public class Upload {
                     out.close();
                     input.close();
                 }
+//                JOptionPane.showMessageDialog(null, "上传成功！", "提示",
+//                        JOptionPane.INFORMATION_MESSAGE);
+
                 JOptionPane.showMessageDialog(null, "上传成功！", "提示",
-                        JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.ERROR_MESSAGE);
 
             } catch (FileNotFoundException e1) {
                 JOptionPane.showMessageDialog(null, "上传失败！", "提示",

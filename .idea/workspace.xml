@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dde3c371-c82b-417b-9bda-e9f3ece2672d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/upload/JFrameMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upload/JFrameMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/upload/Upload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/upload/Upload.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +101,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager" selected="Application.JFrameMain">
     <configuration name="JFrameMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -122,17 +126,6 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,7 +153,9 @@
       <option name="presentableId" value="Default" />
       <updated>1555464430883</updated>
       <workItem from="1555464442056" duration="7196000" />
-      <workItem from="1625559130250" duration="14000" />
+      <workItem from="1625559130250" duration="649000" />
+      <workItem from="1625560165863" duration="643000" />
+      <workItem from="1626064822826" duration="117000" />
     </task>
     <servers />
   </component>
@@ -203,9 +198,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
