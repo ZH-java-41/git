@@ -76,7 +76,7 @@ public class Upload {
 //                    /** 判断是否已有该文件* */
                     if (set.contains(f.getName())) {
                         JOptionPane.showMessageDialog(new JDialog(),
-                                f.getName() + ":该文件已存在123！");
+                                f.getName() + ":该文件已存在！");
                         return;
                     }
                     input = new FileInputStream(f);

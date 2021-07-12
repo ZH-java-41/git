@@ -18,7 +18,7 @@ public class JFrameMain {
         if ("开发人员".equals(selectedValue)) {
             new Upload().UpLoadFile("上传文件", selectedValue);
         }
-//        new Upload().UpLoadFile("上传文件", "开发人员");
+        new Upload().UpLoadFile("上传文件", "开发人员");
 
     }
 }
